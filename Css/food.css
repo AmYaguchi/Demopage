@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&display=swap');
+html{
+    font-size: 62.5%;
+}
+body {
+     margin: 0;   
+     font-family:  sans-serif; 
+     box-sizing: border-box;
+     overflow-x: hidden;
+}
+a{
+    text-decoration: none;
+}
+.navbar {
+    
+   padding: 0 4em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em    ;
+}
+.logo div 
+{
+    height: 4em;
+    width: .2em;
+    background-color: #111111;
+}
+.logo h1{
+font-size: 4rem;
+color: #111111;
+}
+.menu{
+    position: relative;
+    display: flex;
+    text-decoration: none;  
+    display: flex;
+    gap: 5em;
+    padding: 0 14em;
+
+
+} 
+.menu  li{
+    list-style: none;
+    font-size: 2rem;
+    z-index: 1;
+color: #111111;
+}
+
+.hero{
+    display: flex;
+    gap: 8em;
+    align-items: center;
+    justify-content: space-evenly;
+    height: calc(100vh - 101px);
+    padding: 0 4em;
+}
+.col-left{
+    height: 100%;
+    justify-content: center;
+    width: 50%;
+    display: flex;
+    align-items: center;
+
+}
+.col-right{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}.col-left-content h1{
+    font-size: 7rem;
+    margin: 0;
+    line-height: 90%;
+    text-transform: uppercase;
+}
+.col-left-content .desc{
+    font-size: 2rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.col-left-content .cta-btn{
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    margin: 0;
+}

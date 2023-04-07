@@ -59,21 +59,23 @@ color: #111111;
     justify-content: space-evenly;
     height: calc(100vh - 101px);
     padding: 0 4em;
+   margin-top: 70px;
 }
+
+/* left box start */
 .col-left{
     height: 100%;
     justify-content: center;
     width: 50%;
     display: flex;
     align-items: center;
+    border:1px solid black;
+    padding: 0 4em;
+    border-radius: 30px;
 
 }
-.col-right{
-    height: 100%;
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-}.col-left-content h1{
+
+.col-left-content h1{
     font-size: 7rem;
     margin: 0;
     line-height: 90%;
@@ -88,4 +90,116 @@ color: #111111;
     justify-content: center;
     font-size: 2rem;
     margin: 0;
+}
+
+
+
+
+.box{
+    display: flex;
+    gap:3em;
+    border: 1px solid gray;
+    width: 500px;
+    padding: 0 4em;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+.offer{
+    font-size: 7rem;
+    text-transform: uppercase;
+
+}
+.info{
+    margin-top: 5em;
+    font-size: medium;
+}
+.first{
+    border:1px solid darksalmon;
+    width: 70%;
+    padding-left: 50px;
+    background-color: darksalmon;
+    border-radius: 20px;
+    text-decoration: none;
+   color: black;
+
+}
+
+
+.leenk{
+    border:1px solid rgb(225, 219, 219);
+    width: 70%;
+   padding-left: 30px;
+   text-decoration: none;
+   color: black;
+   border-radius: 20px;
+}
+
+.cta-btn{
+   margin: 100px;
+   gap:10em;
+   
+}
+
+/* left box end */
+
+/* right box start */
+.col-right{
+     height: 100%;
+    width: 50%;  
+ 
+   display: grid;
+   grid-template-columns: auto auto;
+   
+   gap:2.3em;
+   grid-template-areas:
+    "left right"
+    "left bottom";
+    border-radius:20px;
+   padding: 1%;
+}
+.img{
+    display: flex;
+    align-items: end;
+    padding: 1.1em;
+   object-fit: cover;
+   border-radius: 30px;
+}
+.image-1{
+   grid-area: left;
+    background-image: url("https://th.bing.com/th/id/OIP.kjUlCh1H10kRP0SedYcqywHaFj?w=281&h=211&c=7&r=0&o=5&dpr=1.1&pid=1.7");
+}
+.image-2{
+    background-image: url("../Figmaref/national-fast-food-day.jpg");
+   
+}
+
+.image-3{
+    
+    background-image: url("../Figmaref/default-pasta.jpg");
+}
+.card-detail{
+    width: 100%;
+    align-items: center;
+    border-radius: 10px;
+    background-color:rgb(235, 220, 220);
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid white;
+    
+}
+/* right box end */
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #101010;
+    padding: 0px 45px;
+    border: 1px solid black;
+    height:60px;
+    font-size: 2rem;
+
+  }
+.Main{
+    margin-bottom: 60px;
 }
